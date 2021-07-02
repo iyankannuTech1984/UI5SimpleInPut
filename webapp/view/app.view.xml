@@ -1,0 +1,39 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+      xmlns:l="sap.ui.layout" 
+      xmlns:core="sap.ui.core" 
+      xmlns:f="sap.ui.layout.form" 
+      xmlns:layout="sap.ui.commons.layout"
+      controllerName="simpleInputwith_simpleform.controller.app" 
+      displayBlock="true">
+	<App>
+		<pages with="Auto">
+			<Page title="{i18n>title}">
+				<VBox class="sapUiSmallMargin">
+				<f:SimpleForm id="simpleForm" layout="ResponsiveGridLayout" width="100%"
+							   editable="true"
+						       singleContainerFullSize="false"
+				               columnsXL="1" columnsL="1" columnsM="1"
+				               emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" 
+				               labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" 
+				               title="User Login Page">
+				<f:content>
+					<Label text="Employee ID" labelFor="Idinp1" design="Bold"/>
+					<Input id="Idinp1" placeholder="Enter Emp id"/>
+					<Label text="Pass Word"  labelFor="Idinp2" design="Bold" />
+					<Input id="Idinp2" type="Password" placeholder="Password"/>
+				
+				</f:content>
+					<OverflowToolbar width="100%" >
+						<ToolbarSpacer>
+						</ToolbarSpacer>
+						<Button text="Login" type="Emphasized"></Button>
+						<Button text="Sign Up" type="Emphasized"></Button>
+						<ToolbarSpacer>
+						</ToolbarSpacer>
+					</OverflowToolbar>
+				</f:SimpleForm>
+				</VBox>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
